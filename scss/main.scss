@@ -1,0 +1,24 @@
+// Font 
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap');
+
+// Basic Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', monospace;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+// Palette
+$primary-color: #FCA250;
+$secondary-color: #373333;
+$tertiary-color: #201B1B;
