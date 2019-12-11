@@ -1,4 +1,4 @@
-![vsg Design Logo](https://github.com/savegdesigner/portfolio/blob/master/vsg-logo.svg)
+[![vsg Design Logo](https://github.com/savegdesigner/portfolio/blob/master/vsg-logo.svg)](https://www.vsgdesign.me)
 
 # vsgdesign.me
 
