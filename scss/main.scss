@@ -16,9 +16,213 @@ html, body{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 // Palette
 $primary-color: #FCA250;
 $secondary-color: #373333;
 $tertiary-color: #201B1B;
+
+// Buttons
+
+.primary-button{
+    position: relative;
+    margin-top: 30px;
+    padding: 10px 45px;
+    background: none;
+    color: white;
+    border: 2px solid $primary-color;
+    outline: none;
+    font-size: 18px;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover{
+        color: $tertiary-color;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        background: $primary-color;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        -webkit-transition: top 0.09s ease-in;
+      }
+
+      &:hover:before {
+        top: 0;
+      }
+}
+
+// Animations
+
+@keyframes scroll{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+// Utls
+
+.c1{
+    animation: scroll 900ms infinite linear;
+    animation-delay: 200ms;
+}
+.c2{
+    animation: scroll 900ms infinite linear;
+    animation-delay: 300ms;
+}
+.c3{
+    animation: scroll 900ms infinite linear;
+    animation-delay: 400ms;
+}
+
+
+// Layout
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px 50px;
+    background: radial-gradient(circle, rgba(55,51,51,1) 0%, rgba(32,27,27,1) 100%);
+
+    header{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo-header{
+            width: 70px;
+        }
+
+        nav{
+            display: flex;
+        }
+
+        nav .navbar{
+            display: flex;
+            list-style: none;
+
+            .nav-link{
+                margin: 0px 40px;
+                color: white;
+                transition: 200ms ease-in-out;
+
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .intro{
+        width: 100%;
+        padding: 20px 40px;
+        margin-top: -60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .intro-text-content{
+            width: 50%;
+            padding: 0px 10px;
+            color: white;
+
+
+            .intro-hey{
+                display: block;
+                font-size: 100px;
+                font-weight: 500;
+                margin: 5px 0px;
+            }
+
+            .intro-self{
+                position: relative;
+                display: block;
+                font-size: 50px;
+                font-weight: 400;
+                margin-left: 60px;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 35px;
+                    left: -60px;
+                    width: 50px;
+                    height: 4px;
+                    background-color: $primary-color;
+                }
+            }
+
+            h2{
+                font-weight: 300;
+            }
+
+        }
+
+        .utls-content{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 10px;
+
+            .profile-picture{
+                margin-left: 180px;
+            }
+
+            .icons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+                justify-self: flex-end;
+
+                a{
+                    margin: 12px 0px;
+                }
+
+                .icon{
+                    width: 30px;
+                    transition: 220ms ease-in-out;
+                    
+                    &:hover{
+                        transform: scale(1.08);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: radial-gradient(circle, rgba(55,51,51,1) 0%, rgba(32,27,27,1) 100%);
+
+    .about-picture{
+        width: 50%;
+        height: 100%;
+        background-image: url('/assets/images/about-picture.png');
+        background-size: cover;
+    }
+
+    .about-content{
+        width: 50%;
+    }
+}
