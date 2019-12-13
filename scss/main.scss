@@ -14,6 +14,10 @@ html, body{
     height: 100%;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -27,6 +31,7 @@ $tertiary-color: #201B1B;
 // Buttons
 
 .primary-button{
+    opacity: 0;
     position: relative;
     margin-top: 30px;
     padding: 10px 45px;
@@ -34,10 +39,13 @@ $tertiary-color: #201B1B;
     color: white;
     border: 2px solid $primary-color;
     outline: none;
+    border-radius: 2px;
     font-size: 18px;
     z-index: 1;
     overflow: hidden;
     cursor: pointer;
+    animation: intro-animation 500ms forwards 0s linear;
+    animation-delay: 700ms;
 
     &:hover{
         color: $tertiary-color;
@@ -69,6 +77,48 @@ $tertiary-color: #201B1B;
     to{
         opacity: 0;
     }
+}
+
+@keyframes intro-animation{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+        }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        }
+}
+
+@keyframes intro-image-animation{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+        }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        }
+}
+
+@keyframes intro-icons-animation{
+    0%{
+        transform: translateX(90px);
+        opacity: 0;
+        }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        }
+}
+
+@keyframes intro-fade-animation{
+    0%{
+        opacity: 0;
+        }
+    100%{
+        opacity: 1;
+        }
 }
 
 // Utls
@@ -104,6 +154,8 @@ main{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        opacity: 0;
+        animation: intro-fade-animation 800ms forwards 0s ease-in-out;
 
         .logo-header{
             width: 70px;
@@ -142,20 +194,24 @@ main{
             padding: 0px 10px;
             color: white;
 
-
             .intro-hey{
                 display: block;
                 font-size: 100px;
                 font-weight: 500;
                 margin: 5px 0px;
+                opacity: 0;
+                animation: intro-animation 700ms forwards 0s linear;
             }
 
             .intro-self{
+                opacity: 0;
                 position: relative;
                 display: block;
                 font-size: 50px;
                 font-weight: 400;
                 margin-left: 60px;
+                animation: intro-animation 600ms forwards 0s linear;
+                animation-delay: 400ms;
 
                 &::before{
                     content: '';
@@ -169,7 +225,11 @@ main{
             }
 
             h2{
-                font-weight: 300;
+                opacity: 0;
+                font-weight: 400;
+                animation: intro-animation 500ms forwards 0s linear;
+                animation-delay: 600ms;
+
             }
 
         }
@@ -183,6 +243,7 @@ main{
 
             .profile-picture{
                 margin-left: 180px;
+                animation: intro-image-animation 1s forwards 0s linear;
             }
 
             .icons{
@@ -193,7 +254,28 @@ main{
                 justify-self: flex-end;
 
                 a{
+                    opacity: 0;
                     margin: 12px 0px;
+                }
+
+                a:nth-child(1){
+                    animation: intro-icons-animation 600ms forwards 0s linear;
+                    animation-delay: 400ms;
+                }
+
+                a:nth-child(2){
+                    animation: intro-icons-animation 600ms forwards 0s linear;
+                    animation-delay: 500ms;
+                }
+
+                a:nth-child(3){
+                    animation: intro-icons-animation 600ms forwards 0s linear;
+                    animation-delay: 600ms;
+                }
+
+                a:nth-child(4){
+                    animation: intro-icons-animation 600ms forwards 0s linear;
+                    animation-delay: 700ms;
                 }
 
                 .icon{
@@ -207,12 +289,18 @@ main{
             }
         }
     }
+
+    .scroll-box{
+        opacity: 0;
+        animation: intro-fade-animation 800ms forwards 0s ease-in-out;
+    }
 }
 
 .about{
+    display: flex;
     position: relative;
     width: 100%;
-    height: 900px;
+    height: 800px;
     background: radial-gradient(circle, rgba(55,51,51,1) 0%, rgba(32,27,27,1) 100%);
 
     .about-picture{
@@ -224,5 +312,105 @@ main{
 
     .about-content{
         width: 50%;
+        height: 100%;
+        padding: 0px 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        position: relative;
+
+        .about-title{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-size: 46px;
+            color: white;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 35px;
+                left: -60px;
+                width: 50px;
+                height: 4px;
+                background-color: white;
+            }
+
+            span{
+                color: $primary-color;
+            }
+        }
+
+        .introduce{
+            font-size: 20px;
+            color: white;
+            font-weight: 300;
+        }
+
+        .info{
+            width: 100%;
+            color: white;
+            margin-top: 30px;
+            font-weight: 300;
+        }
+
+        .info-content{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            font-size: 18px;
+            margin-top: 5px;
+
+            p{
+                margin-left: 10px;
+            }
+
+            h4{
+                font-weight: 500;
+            }
+
+        }
+
+        .skills{
+            margin-top: 40px;
+
+            img{
+                width: 40px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: radial-gradient(circle, rgba(55,51,51,1) 0%, rgba(32,27,27,1) 100%);
+
+    .work-title{
+        position: absolute;
+        top: 50px;
+        left: 120px;
+        font-size: 46px;
+        color: white;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: -60px;
+            width: 50px;
+            height: 4px;
+            background-color: white;
+        }
+
+        span{
+            color: $primary-color;
+        }
     }
 }
