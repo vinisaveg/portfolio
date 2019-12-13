@@ -35,15 +35,15 @@ $tertiary-color: #201B1B;
     position: relative;
     margin-top: 30px;
     padding: 10px 45px;
-    background: none;
     color: white;
+    background-color: transparent;
     border: 2px solid $primary-color;
-    outline: none;
     border-radius: 2px;
     font-size: 18px;
     z-index: 1;
     overflow: hidden;
     cursor: pointer;
+    outline: none;
     animation: intro-animation 500ms forwards 0s linear;
     animation-delay: 700ms;
 
@@ -60,7 +60,40 @@ $tertiary-color: #201B1B;
         right: 0;
         top: 100%;
         z-index: -1;
-        -webkit-transition: top 0.09s ease-in;
+        -webkit-transition: top 0.15s ease-in;
+      }
+
+      &:hover:before {
+        top: 0;
+      }
+}
+
+.secondary-button{
+    position: relative;
+    margin: 10px;
+    padding: 8px 15px;
+    color: white;
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+    font-size: 18px;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover{
+        color: $tertiary-color;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        background: $primary-color;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        -webkit-transition: top 0.15s ease-in;
       }
 
       &:hover:before {
@@ -229,7 +262,6 @@ main{
                 font-weight: 400;
                 animation: intro-animation 500ms forwards 0s linear;
                 animation-delay: 600ms;
-
             }
 
         }
@@ -412,5 +444,156 @@ main{
         span{
             color: $primary-color;
         }
+    }
+
+    .project-wrapper{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        margin: 30px 20px 0px 20px; 
+        background-color: $primary-color;
+        border-radius: 6px;
+    }
+
+    .project-box{
+        width: 100%;
+        height: 450px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-radius: 6px;
+        background-color: $secondary-color;
+        background-image: url('/assets/images/project1.svg');
+        background-size: cover;
+        box-shadow: 0px 6px 16px rgba(31, 29, 29, 0.37);
+        transform: translate(5px, -5px);
+        transition: 200ms ease-in-out;
+
+        .text-content{
+            margin: 10px;
+            color: white;
+
+            p{
+                font-size: 18px;
+            }
+
+            span{
+                font-weight: 300;
+            }
+        }
+
+        &:hover{
+            transform: translate(10px, -10px);
+        }
+    }
+}
+
+.contact{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: radial-gradient(circle, rgba(55,51,51,1) 0%, rgba(32,27,27,1) 100%);
+
+    .contact-title{
+        position: absolute;
+        top: 10px;
+        right: 52%;
+        font-size: 46px;
+        color: white;
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: 280px;
+            width: 50px;
+            height: 4px;
+            background-color: white;
+        }
+
+        span{
+            color: $primary-color;
+        }
+    }
+
+    .contact-info{
+        width: 50%;
+        height: 100%;
+        padding: 100px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+        .infos-wrapper{
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            flex-flow: column;
+        }
+
+        .email,
+        .phone{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            color: white;
+            margin: 20px 0px;
+
+            p{
+                margin-left: 30px;
+                font-size: 26px;
+            }
+        }
+
+        .email-icon,
+        .phone-icon{
+            width: 30px;
+        }
+
+        .links{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .links-link{
+                margin: 10px 20px;
+
+                .links-icon{
+                    width: 35px;
+                    transition: 200ms ease-in-out;
+
+                    &:hover{
+                        transform: scale(1.09);
+                    }
+                }
+            }
+        }
+
+        .copy{
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                margin-left: 20px;
+                color: white;
+                font-weight: 300;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .send-message{
+        width: 50%;
+        height: 100%;
+        padding: 100px 0px;
+        background-color: $primary-color;
     }
 }
