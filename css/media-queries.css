@@ -1,0 +1,167 @@
+@media screen and (max-width: 1500px){
+
+    .about-content{
+        padding: 0px 100px!important;
+    }
+
+    .icons{
+        margin-left: 20px;
+    }
+
+    .project-wrapper{
+        width: 40%!important;
+    }
+
+}
+
+@media screen and (max-width: 1320px){
+
+    .intro{
+        padding: 10px!important;
+    }
+
+    .profile-picture{
+        margin-left: 100px!important;
+    }
+}
+
+@media screen and (max-width: 1170px){
+
+    .profile-picture{
+        margin-left: 20px!important;
+    }
+
+}
+
+@media screen and (max-width: 1080px){
+
+    .project-wrapper{
+        width: 50%!important;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    .profile-picture{
+        margin-left: 0px!important;
+    }
+
+    .about-content{
+        padding: 0px 30px!important;
+    }
+
+}
+
+@media screen and (max-width: 970px){
+
+    .profile-picture{
+        display: none;
+    }
+
+    main{
+        padding: 10px 20px!important;
+    }
+
+    .intro{
+        flex-flow: column;
+        padding: 10px 20px!important;
+    }
+
+    .intro-text-content{
+        width: 100%!important;
+    }
+
+    .icons{
+        flex-flow: row!important;
+        width: 100%;
+    }
+
+    .icon-link{
+        margin-right: 20px!important;
+    }
+
+    .utls-content{
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .about-content{
+        padding: 0px 15px 0px 30px!important;
+    }
+
+    .work{
+        flex-flow: column wrap;
+        height: auto;
+        padding: 120px 20px 80px 20px;
+    }
+
+    .project-wrapper{
+        width: 60%!important;
+        margin-top: 40px!important;
+    }
+
+    .contact{
+        flex-flow: column wrap!important;
+        height: auto;
+    }
+
+    .contact-info{
+        width: 100%!important;
+        padding: 80px 0px 0px 0px !important;
+    }
+
+    .infos-wrapper{
+        margin-top: 50px!important;
+    }
+
+    .contact-title{
+        right: 14%!important;
+    }
+
+    .send-message{
+        width: 100%!important;
+    }
+
+    .copy{
+        z-index: 1;
+    }
+
+}
+
+@media screen and (max-width: 740px){
+
+    .intro-text-content{
+        text-align: center!important;
+    }
+
+    .intro-self{
+        margin: 0!important;
+    }
+
+    .intro-self::before{
+        display: none;
+    }
+
+    .about-picture{
+        display: none;
+    }
+
+    .about{
+        height: 700px;
+    }
+
+    .about-content{
+        width: 100%!important;
+    }
+
+    .about-title{
+        left: 15%!important;
+    }
+
+    .project-wrapper{
+        width: 80%!important;
+        margin-top: 40px!important;
+    }
+
+}

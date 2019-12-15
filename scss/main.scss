@@ -447,6 +447,7 @@ main{
     }
 
     .project-wrapper{
+        position: relative;
         width: 30%;
         display: flex;
         justify-content: center;
@@ -465,8 +466,6 @@ main{
         align-items: flex-end;
         border-radius: 6px;
         background-color: $secondary-color;
-        background-image: url('/assets/images/project1.svg');
-        background-size: cover;
         box-shadow: 0px 6px 16px rgba(31, 29, 29, 0.37);
         transform: translate(5px, -5px);
         transition: 200ms ease-in-out;
@@ -488,6 +487,16 @@ main{
             transform: translate(10px, -10px);
         }
     }
+
+    .project-1{
+        background-image: url('/assets/images/project1.png');
+        background-size: cover;
+    }
+
+    .project-2{
+        background-image: url('/assets/images/project2.png');
+        background-size: cover;
+    }
 }
 
 .contact{
@@ -506,6 +515,7 @@ main{
 
         &::after{
             content: '';
+            z-index: 1;
             position: absolute;
             top: 35px;
             left: 280px;
@@ -555,7 +565,7 @@ main{
         }
 
         .links{
-            margin-top: 50px;
+            margin: 40px 0px 70px 0px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -591,9 +601,69 @@ main{
     }
 
     .send-message{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 50%;
         height: 100%;
         padding: 100px 0px;
         background-color: $primary-color;
+
+        #contact-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+
+            #message{
+                padding: 14px;
+                outline: none;
+                border-radius: 2px;
+                background-color: white;
+                border: none;
+                max-height: 500px;
+                min-height: 200px;
+                max-width: 500px;
+                min-width: 300px;
+            }
+            
+            .user-info{
+                width: 100%;
+                margin: 14px 0px;
+                padding: 15px 10px;
+                outline: none;
+                border-radius: 2px;
+                background-color: white;
+                border: none;
+            }
+
+            #contact-submit{
+                position: relative;
+                margin: 30px 0px;
+                padding: 14px 40px;
+                background-color: white;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                color: $primary-color;
+                box-shadow: 1px 4px 0px #7e522931;
+                cursor: pointer;
+                transition: 200ms ease-in-out;
+
+                &:hover{
+                    color: $tertiary-color;
+                    transform: translateY(-5px);
+                    box-shadow: 0 3px 8px 6px #7e52292c;
+                }
+            }
+
+            .send-icon{
+                    width: 30px;
+                    position: absolute;
+                    top: 37px;
+                    right: 8px;
+                }
+        }
     }
 }

@@ -586,6 +586,7 @@ main .scroll-box {
 }
 
 .work .project-wrapper {
+  position: relative;
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,8 +617,6 @@ main .scroll-box {
           align-items: flex-end;
   border-radius: 6px;
   background-color: #373333;
-  background-image: url("/assets/images/project1.svg");
-  background-size: cover;
   -webkit-box-shadow: 0px 6px 16px rgba(31, 29, 29, 0.37);
           box-shadow: 0px 6px 16px rgba(31, 29, 29, 0.37);
   -webkit-transform: translate(5px, -5px);
@@ -644,6 +643,16 @@ main .scroll-box {
           transform: translate(10px, -10px);
 }
 
+.work .project-1 {
+  background-image: url("/assets/images/project1.png");
+  background-size: cover;
+}
+
+.work .project-2 {
+  background-image: url("/assets/images/project2.png");
+  background-size: cover;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,6 +673,7 @@ main .scroll-box {
 
 .contact .contact-title::after {
   content: '';
+  z-index: 1;
   position: absolute;
   top: 35px;
   left: 280px;
@@ -734,7 +744,7 @@ main .scroll-box {
 }
 
 .contact .contact-info .links {
-  margin-top: 50px;
+  margin: 40px 0px 70px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,9 +793,88 @@ main .scroll-box {
 }
 
 .contact .send-message {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
   height: 100%;
   padding: 100px 0px;
   background-color: #FCA250;
+}
+
+.contact .send-message #contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.contact .send-message #contact-form #message {
+  padding: 14px;
+  outline: none;
+  border-radius: 2px;
+  background-color: white;
+  border: none;
+  max-height: 500px;
+  min-height: 200px;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.contact .send-message #contact-form .user-info {
+  width: 100%;
+  margin: 14px 0px;
+  padding: 15px 10px;
+  outline: none;
+  border-radius: 2px;
+  background-color: white;
+  border: none;
+}
+
+.contact .send-message #contact-form #contact-submit {
+  position: relative;
+  margin: 30px 0px;
+  padding: 14px 40px;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #FCA250;
+  -webkit-box-shadow: 1px 4px 0px #7e522931;
+          box-shadow: 1px 4px 0px #7e522931;
+  cursor: pointer;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.contact .send-message #contact-form #contact-submit:hover {
+  color: #201B1B;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 3px 8px 6px #7e52292c;
+          box-shadow: 0 3px 8px 6px #7e52292c;
+}
+
+.contact .send-message #contact-form .send-icon {
+  width: 30px;
+  position: absolute;
+  top: 37px;
+  right: 8px;
 }
 /*# sourceMappingURL=main.css.map */

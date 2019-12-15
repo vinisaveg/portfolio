@@ -11,13 +11,14 @@
     <meta property="og:locale" content="en">
     <meta property="og:url" content="https://vsgdesign.me">
     <meta property="og:title" content="Vsg Design">
+    
 
     <title>Welcome to my Portfolio</title>
 
     <!-- Main CSS Style File -->
     <link rel="stylesheet" href="/scss/main.css">
     <!-- Media Queries -->
-
+    <link rel="stylesheet" href="/css/media-queries.css">
     <!-- Main Javascript File -->
     <script defer src="/js/main.js"></script>
 </head>
@@ -139,7 +140,7 @@
 
         <div class="project-wrapper">
 
-            <div class="project-box">
+            <div class="project-box project-1">
                 <div class="text-content">
                     <p>React.js Page</p>
                     <span>UI Design</span>
@@ -152,10 +153,10 @@
 
         <div class="project-wrapper">
 
-            <div class="project-box">
+            <div class="project-box project-2">
 
                 <div class="text-content">
-                    <p>Bitapp Landig Page</p>
+                    <p>HTTP Page</p>
                     <span>UI Design / Code</span>
                 </div>
 
@@ -186,10 +187,14 @@
 
 
             <div class="links">
-                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/instagram.svg" alt="Github Icon"></a>
-                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/github.svg" alt="Github Icon"></a>
-                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/linkedin.svg" alt="Github Icon"></a>
-                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/behance.svg" alt="Github Icon"></a>
+                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/instagram.svg"
+                        alt="Github Icon"></a>
+                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/github.svg"
+                        alt="Github Icon"></a>
+                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/linkedin.svg"
+                        alt="Github Icon"></a>
+                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/behance.svg"
+                        alt="Github Icon"></a>
             </div>
 
             <div class="copy">
@@ -200,6 +205,20 @@
         </div>
 
         <div class="send-message">
+
+            <form action="" method="POST" id="contact-form">
+
+                <input type="text" name="name" class="user-info" placeholder="Your name...">
+                <input type="text" name="email" class="user-info" placeholder="Your e-mail...">
+
+                <textarea name="message" id="message" cols="60" rows="10">Your message...
+                </textarea>
+
+                <input type="submit" id="contact-submit" value="Send">
+
+                <!-- <img src="/assets/icons/plane.svg" alt="Send form icon" class="send-icon"> -->
+
+            </form>
 
         </div>
     </section>
