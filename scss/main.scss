@@ -31,6 +31,7 @@ $tertiary-color: #201B1B;
 // Buttons
 
 .primary-button{
+    display: inline-block;
     opacity: 0;
     position: relative;
     margin-top: 30px;
@@ -182,6 +183,7 @@ main{
     background: radial-gradient(circle, rgba(55,51,51,1) 0%, rgba(32,27,27,1) 100%);
 
     header{
+        overflow: hidden;
         position: relative;
         z-index: 10;
         width: 100%;
@@ -220,7 +222,12 @@ main{
                 right: 25px;
                 top: 35px;
                 display: none;
+                cursor: pointer;
             }
+        }
+
+        .nav-closed{
+            transform: translateX(0);
         }
 
         nav .navbar{

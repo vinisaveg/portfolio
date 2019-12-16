@@ -25,7 +25,7 @@
 
 <body>
 
-    <main>
+    <main id="home">
 
         <header>
 
@@ -33,14 +33,14 @@
                 <img class="logo-header" src="./assets/icons/vsg-logo.svg" alt="vsgdesign Logo">
             </a>
 
-            <img class="menu-icon" src="/assets/icons/menu-icon.svg" alt="Navigation menu icon">
+            <img class="menu-icon" src="/assets/icons/menu-icon.svg" alt="Navigation menu">
 
             <nav>
 
                 <img class="close-icon" src="/assets/icons/close-icon.svg" alt="Close naveigation bar">
 
                 <ul class="navbar">
-                    <li><a class="nav-link" href="/">Home</a></li>
+                    <li><a class="nav-link" href="#home">Home</a></li>
                     <li><a class="nav-link" href="#about">About</a></li>
                     <li><a class="nav-link" href="#work">Work</a></li>
                     <li><a class="nav-link" href="#contact">Contact</a></li>
@@ -62,7 +62,7 @@
 
                 <h2>My name is Vinicius Savegnago, and I invite you to see my work.</h2>
 
-                <button class="primary-button">See more</button>
+                <a class="primary-button" href="#about">Sure!</a>
             </div>
 
             <div class="utls-content">
@@ -70,14 +70,14 @@
                 <img class="profile-picture" src="/assets/images/profile-picture.svg" alt="Profile Picture">
 
                 <div class="icons">
-                    <a href="/" class="icon-link">
+                    <a target="blank" href="https://www.instagram.com/vsgdesigner/" class="icon-link">
                         <img class="icon" src="/assets/icons/instagram.svg" alt="Instagram Icon">
                     </a>
-                    <a href="/" class="icon-link"><img class="icon" src="/assets/icons/github.svg"
+                    <a target="blank" href="https://github.com/savegdesigner" class="icon-link"><img class="icon" src="/assets/icons/github.svg"
                             alt="Github Icon"></a>
-                    <a href="/" class="icon-link"><img class="icon" src="/assets/icons/linkedin.svg"
+                    <a target="blank" href="https://linkedin.com/in/vinicius-savegnago-95b438179" class="icon-link"><img class="icon" src="/assets/icons/linkedin.svg"
                             alt="Linkedin Icon"></a>
-                    <a href="/" class="icon-link"><img class="icon" src="/assets/icons/behance.svg"
+                    <a target="blank" href="https://www.behance.net/viniciussilva3" class="icon-link"><img class="icon" src="/assets/icons/behance.svg"
                             alt="Behance Icon"></a>
                 </div>
 
@@ -152,7 +152,7 @@
                     <span>UI Design</span>
                 </div>
 
-                <a href="/" class="secondary-button">See more</a>
+                <a target="blank" href="https://www.behance.net/gallery/89269019/Reactjs-Page-Concept" class="secondary-button">See more</a>
             </div>
 
         </div>
@@ -166,7 +166,7 @@
                     <span>UI Design / Code</span>
                 </div>
 
-                <a href="/" class="secondary-button">See more</a>
+                <a target="blank" href="http://site-http.herokuapp.com/" class="secondary-button">See more</a>
             </div>
 
         </div>
@@ -193,14 +193,14 @@
 
 
             <div class="links">
-                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/instagram.svg"
+                <a class="links-link" target="blank" href="https://www.instagram.com/vsgdesigner/"><img class="links-icon" src="/assets/icons/instagram.svg"
+                        alt="Instagram Icon"></a>
+                <a class="links-link" target="blank" href="https://github.com/savegdesigner"><img class="links-icon" src="/assets/icons/github.svg"
                         alt="Github Icon"></a>
-                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/github.svg"
-                        alt="Github Icon"></a>
-                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/linkedin.svg"
-                        alt="Github Icon"></a>
-                <a class="links-link" href="#"><img class="links-icon" src="/assets/icons/behance.svg"
-                        alt="Github Icon"></a>
+                <a class="links-link" target="blank" href="https://linkedin.com/in/vinicius-savegnago-95b438179"><img class="links-icon" src="/assets/icons/linkedin.svg"
+                        alt="Linkedin Icon"></a>
+                <a class="links-link" target="blank" href="https://www.behance.net/viniciussilva3"><img class="links-icon" src="/assets/icons/behance.svg"
+                        alt="Behance Icon"></a>
             </div>
 
             <div class="copy">
@@ -221,8 +221,6 @@
                 </textarea>
 
                 <input type="submit" id="contact-submit" value="Send">
-
-                <!-- <img src="/assets/icons/plane.svg" alt="Send form icon" class="send-icon"> -->
 
             </form>
 
