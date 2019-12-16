@@ -250,6 +250,8 @@ main {
 }
 
 main header {
+  position: relative;
+  z-index: 10;
   width: 100%;
   height: 80px;
   display: -webkit-box;
@@ -270,10 +272,33 @@ main header .logo-header {
   width: 70px;
 }
 
+main header .menu-icon {
+  width: 38px;
+  display: none;
+  cursor: pointer;
+}
+
 main header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+main header nav .nav-logo {
+  width: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 42%;
+  margin-bottom: 40px;
+  display: none;
+}
+
+main header nav .close-icon {
+  width: 25px;
+  position: absolute;
+  right: 25px;
+  top: 35px;
+  display: none;
 }
 
 main header nav .navbar {
@@ -566,7 +591,7 @@ main .scroll-box {
 .work .work-title {
   position: absolute;
   top: 50px;
-  left: 120px;
+  left: 80px;
   font-size: 46px;
   color: white;
 }
