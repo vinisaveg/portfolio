@@ -10,12 +10,13 @@
     <meta property="og:locale" content="en">
     <meta property="og:url" content="https://vsgdesign.me">
     <meta property="og:title" content="Vsg Design">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico"/>
     
 
     <title>Welcome to my Portfolio</title>
 
     <!-- Main CSS Style File -->
-    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <!-- Media Queries -->
     <link rel="stylesheet" href="/css/media-queries.css">
     <!-- Main Javascript File -->
@@ -213,13 +214,15 @@
 
             <form action="" method="POST" id="contact-form">
 
-                <input type="text" name="name" class="user-info" placeholder="Your name...">
-                <input type="text" name="email" class="user-info" placeholder="Your e-mail...">
+                <span id="error"></span>
+
+                <input id="user-name" type="text" name="name" class="user-info" placeholder="Your name...">
+                <input id="user-email" type="text" name="email" class="user-info" placeholder="Your e-mail...">
 
                 <textarea name="message" id="message" cols="60" rows="10">Your message...
                 </textarea>
 
-                <input type="submit" id="contact-submit" value="Send">
+                <input type="submit" id="contact-submit" value="Send" name="submit-button">
 
             </form>
 
