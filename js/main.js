@@ -41,7 +41,6 @@ nav_links.forEach((link) => {
 
     link.addEventListener('click', () => {
 
-        console.log('link')
         nav.classList.toggle('nav-closed')
 
     })
@@ -76,10 +75,16 @@ message_form.addEventListener('submit', (e) => {
 
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
 
-            var response = xmlhttp.response
+            var response = JSON.parse(xmlhttp.response)
 
-            if(response == 'Sent'){
-                submit_button.value = response
+            if(response == 'sent'){
+
+                submit_button.value = 'Sent'
+
+                user_name = ''
+                user_email = ''
+                user_message = ''
+                error_span.innerHTML = ''
 
             }else{
                 error_span.innerHTML = response

@@ -21,14 +21,14 @@ if(isset($user_data)){
 
     if(empty($name) || empty($name) || empty($message)){
 
-        $response = 'Please fill in all fields';
+        $response = "Please fill in all fields";
 
     }
 
     if(empty($response)){
 
         mail($to, $about, $message, $headers); 
-        $response = "Sent";
+        $response = "sent";
         echo json_encode($response);
 
     }else{
