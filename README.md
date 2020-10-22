@@ -1,8 +1,43 @@
-[![vsg Design Logo](https://github.com/savegdesigner/portfolio/blob/master/vsg-logo.svg)](https://www.vsgdesign.me)
+# My portfolio
 
-# vsgdesign.me
+> 2021 version of my portfolio
 
-## Author 
-- [**_Vinicius Savegnago_**](https://www.instagram.com/vsgdesigner/)
+### About :question:
 
----
+This portfolio is built with the techs that I've learned and have more fun working with.
+
+### Techs :computer:
+
+-   [React.js](https://pt-br.reactjs.org)
+-   [styled-components](https://styled-components.com)
+-   [Framer Motion](https://www.framer.com/motion/)
+
+### Running locally :running:
+
+To run this application you will need [Node.js](https://nodejs.org/en/) installed.
+
+First clone this repo
+
+`
+
+    git clone 'repo'
+
+`
+
+Install all dependencies needed to run the app
+
+`
+
+    yarn install
+
+`
+
+Now you are good to:
+
+-   `yarn start` to start the app in development mode
+-   `yarn test` to run all the tests before sending to production
+-   `yarn build` to build the app ready for deploy
+
+### Issues :bug:
+
+Found any bug? Feel free to report it.
