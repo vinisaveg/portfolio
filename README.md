@@ -1,6 +1,13 @@
+<p align="center">
+   <img src=".github/logo.svg" width="auto"/>
+</p>
+
 # My portfolio
 
 > 2021 version of my portfolio
+
+![Version](https://img.shields.io/github/package-json/v/vinisaveg/portfolio?color=%236875E5)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fvsgdesign.me)
 
 ### About :question:
 
@@ -16,7 +23,7 @@ This portfolio is built with the techs that I've learned and have more fun worki
 
 To run this application you will need [Node.js](https://nodejs.org/en/) installed.
 
-First clone this repo
+First clone this repo :smile:
 
 `
 
