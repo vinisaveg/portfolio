@@ -9,6 +9,10 @@
 ![Version](https://img.shields.io/github/package-json/v/vinisaveg/portfolio?color=%236875E5)
 ![Website](https://img.shields.io/website?color=%236875E5&url=https%3A%2F%2Fvsgdesign.me)
 
+<p align="center">
+   <img src=".github/portfolio.png" width="100%"/>
+</p>
+
 ### About :question:
 
 This portfolio is built with the techs that I've learned and have more fun working with.
@@ -25,19 +29,19 @@ To run this application you will need [Node.js](https://nodejs.org/en/) installe
 
 First clone this repo :smile:
 
-`
+```
 
-    git clone 'https://github.com/vinisaveg/portfolio.git'
+    git clone https://github.com/vinisaveg/portfolio.git
 
-`
+```
 
 Install all dependencies needed to run the app
 
-`
+```
 
     yarn install
 
-`
+```
 
 Now you are good to:
 
