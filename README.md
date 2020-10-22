@@ -27,7 +27,7 @@ First clone this repo :smile:
 
 `
 
-    git clone 'repo'
+    git clone 'https://github.com/vinisaveg/portfolio.git'
 
 `
 
