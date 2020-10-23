@@ -4,7 +4,7 @@
 
 # My portfolio
 
-> 2021 version of my portfolio
+> 2021 version of my portfolio.
 
 ![Version](https://img.shields.io/github/package-json/v/vinisaveg/portfolio?color=%236875E5)
 ![Website](https://img.shields.io/website?color=%236875E5&url=https%3A%2F%2Fvsgdesign.me)
@@ -23,11 +23,15 @@ This portfolio is built with the techs that I've learned and have more fun worki
 -   [styled-components](https://styled-components.com)
 -   [Framer Motion](https://www.framer.com/motion/)
 
+### Design :nail_care:
+
+The design was made on [Figma](https://www.figma.com/file/RzaYYKbb1lU6UHOsJjcDUg/Portfolio-2.0?node-id=0%3A1)
+
 ### Running locally :running:
 
 To run this application you will need [Node.js](https://nodejs.org/en/) installed.
 
-First clone this repo :smile:
+First clone this repo
 
 ```
 
