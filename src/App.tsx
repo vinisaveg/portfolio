@@ -11,9 +11,13 @@ const App: FunctionComponent = () => {
         <>
             <GlobalStyle />
             <ThemeProvider theme={theme}>
-                <Wrapper padding={['40px', '60px']}>
-                    <p>Project init!</p>
-                </Wrapper>
+                <Wrapper
+                    flexDirection="column"
+                    justifyContent="center"
+                    alignItems="center"
+                    width="100%"
+                    height="100vh"
+                ></Wrapper>
             </ThemeProvider>
         </>
     );
