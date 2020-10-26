@@ -5,6 +5,7 @@ import GlobalStyle from './styles/global';
 import theme from './styles/theme/theme';
 
 import { Wrapper } from './styles/shared/Wrapper';
+import Header from './components/Header/Header.component';
 
 const App: FunctionComponent = () => {
     return (
@@ -16,8 +17,10 @@ const App: FunctionComponent = () => {
                     justifyContent="center"
                     alignItems="center"
                     width="100%"
-                    height="100vh"
-                ></Wrapper>
+                    height="auto"
+                >
+                    <Header />
+                </Wrapper>
             </ThemeProvider>
         </>
     );
