@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-interface MenuProps {
+interface MenuWrapperProps {
     isOpen?: boolean;
 }
 
-export const Menu = styled(motion.div)<MenuProps>`
+export const MenuWrapper = styled(motion.div)<MenuWrapperProps>`
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: height 250ms ease-in-out;
 
     @media only screen and (max-width: 540px) {
         display: ${(props) => (props.isOpen ? 'flex' : 'none')};
@@ -20,7 +22,7 @@ export const Menu = styled(motion.div)<MenuProps>`
     }
 `;
 
-export const MenuIcons = styled(motion.ul)`
+export const MenuOfIcons = styled(motion.ul)`
     list-style: none;
     display: flex;
     align-items: center;
@@ -31,7 +33,7 @@ export const MenuIcons = styled(motion.ul)`
     }
 `;
 
-export const MenuLinks = styled(MenuIcons)`
+export const MenuOfLinks = styled(MenuOfIcons)`
     ::after {
         content: '';
         width: 1px;
@@ -39,9 +41,21 @@ export const MenuLinks = styled(MenuIcons)`
         background-color: #575757;
         margin: 0px 25px;
     }
+
+    @media only screen and (max-width: 540px) {
+        ::after {
+            background-color: #fff;
+            margin: 25px 0px;
+            height: 80px;
+        }
+    }
 `;
 
-export const MenuItem = styled.li``;
+export const MenuItem = styled.li`
+    @media only screen and (max-width: 540px) {
+        margin: 25px 0px;
+    }
+`;
 
 interface MenuItemLinkProps {
     margin?: Array<string>;
@@ -57,10 +71,6 @@ export const MenuItemLink = styled.a<MenuItemLinkProps>`
     transition: opacity 150ms ease;
     opacity: 0.8;
 
-    @media only screen and (max-width: 540px) {
-        margin: 25px 0px;
-    }
-
     &&:hover {
         opacity: 1;
     }
@@ -68,4 +78,18 @@ export const MenuItemLink = styled.a<MenuItemLinkProps>`
 
 export const MenuItemIcon = styled.img`
     width: 21px;
+`;
+
+export const MenuToggleButton = styled.img`
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 35px;
+    display: none;
+    z-index: 10;
+    cursor: pointer;
+
+    @media only screen and (max-width: 540px) {
+        display: block;
+    }
 `;
