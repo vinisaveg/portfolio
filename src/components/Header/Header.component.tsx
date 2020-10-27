@@ -1,22 +1,30 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 
 import { Wrapper } from '../../styles/shared/Wrapper';
 import {
-    Menu,
-    MenuLinks,
-    MenuIcons,
+    MenuWrapper,
+    MenuOfLinks,
+    MenuOfIcons,
     MenuItem,
     MenuItemLink,
     MenuItemIcon,
+    MenuToggleButton,
 } from './styles';
 
 import BehanceIcon from '../../assets/icons/behance-icon.svg';
 import GithubIcon from '../../assets/icons/github-icon.svg';
 import InstagramIcon from '../../assets/icons/instagram-icon.svg';
+import MenuToggleButtonIcon from '../../assets/icons/menu-icon.svg';
 
 interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = async () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <Wrapper
             width="100%"
@@ -25,8 +33,8 @@ const Header: FunctionComponent<HeaderProps> = () => {
             alignItems="center"
             justifyContent="center"
         >
-            <Menu>
-                <MenuLinks>
+            <MenuWrapper isOpen={isMenuOpen}>
+                <MenuOfLinks>
                     <MenuItem>
                         <MenuItemLink>My work</MenuItemLink>
                     </MenuItem>
@@ -36,9 +44,9 @@ const Header: FunctionComponent<HeaderProps> = () => {
                     <MenuItem>
                         <MenuItemLink>Contact</MenuItemLink>
                     </MenuItem>
-                </MenuLinks>
+                </MenuOfLinks>
 
-                <MenuIcons>
+                <MenuOfIcons>
                     <MenuItem>
                         <MenuItemLink
                             target="_blank"
@@ -62,8 +70,9 @@ const Header: FunctionComponent<HeaderProps> = () => {
                             <MenuItemIcon src={GithubIcon} />
                         </MenuItemLink>
                     </MenuItem>
-                </MenuIcons>
-            </Menu>
+                </MenuOfIcons>
+            </MenuWrapper>
+            <MenuToggleButton src={MenuToggleButtonIcon} onClick={toggleMenu} />
         </Wrapper>
     );
 };
