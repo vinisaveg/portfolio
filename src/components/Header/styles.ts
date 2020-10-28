@@ -5,18 +5,18 @@ interface MenuWrapperProps {
     isOpen?: boolean;
 }
 
-export const MenuWrapper = styled(motion.div)<MenuWrapperProps>`
+export const MenuWrapper = styled(motion.nav)<MenuWrapperProps>`
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: height 250ms ease-in-out;
 
     @media only screen and (max-width: 540px) {
         display: ${(props) => (props.isOpen ? 'flex' : 'none')};
         background-color: ${(props) => props.theme.colors.secondary};
         width: 100%;
         height: 100vh;
+        overflow: hidden;
         flex-direction: column;
         scroll-behavior: none;
     }
@@ -80,11 +80,10 @@ export const MenuItemIcon = styled.img`
     width: 21px;
 `;
 
-export const MenuToggleButton = styled.img`
+export const MenuToggleButton = styled(motion.svg)`
     position: absolute;
     top: 40px;
     right: 40px;
-    width: 35px;
     display: none;
     z-index: 10;
     cursor: pointer;
