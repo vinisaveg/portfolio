@@ -6,6 +6,7 @@ interface WrapperProps {
     flexDirection: string;
     justifyContent: string;
     alignItems: string;
+    flexWrap?: 'wrap' | 'nowrap';
     margin?: Array<string>;
     padding?: Array<string>;
 }
@@ -23,5 +24,5 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
     align-items: ${(props) => props.alignItems};
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: ${(props) => props.flexWrap};
 `;

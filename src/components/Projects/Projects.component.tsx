@@ -1,0 +1,73 @@
+import React, { FunctionComponent } from 'react';
+import { Wrapper } from '../../styles/shared/Wrapper';
+import { ProjectCard } from './styles';
+
+const Projects: FunctionComponent = () => {
+    const projectMiddleCardVariants = {
+        from: {
+            y: 600,
+            opacity: 0,
+        },
+        to: {
+            y: 100,
+            opacity: 1,
+        },
+    };
+
+    const projectOtherCardsVariants = {
+        from: {
+            y: 500,
+            opacity: 0,
+        },
+        to: {
+            y: 0,
+            opacity: 1,
+        },
+    };
+
+    return (
+        <Wrapper
+            width="100%"
+            height="100%"
+            flexDirection="row"
+            alignItems="baseline"
+            justifyContent="center"
+            flexWrap="wrap"
+        >
+            <ProjectCard
+                variants={projectOtherCardsVariants}
+                initial="from"
+                animate="to"
+                transition={{ type: 'spring', stiffness: 100, delay: 1 }}
+                width="300px"
+                height="300px"
+                backgroundColor="#5DEE9F"
+            />
+            <ProjectCard
+                variants={projectMiddleCardVariants}
+                initial="from"
+                animate="to"
+                transition={{ type: 'spring', stiffness: 100, delay: 0.5 }}
+                width="650px"
+                height="500px"
+                backgroundColor="#6875E5"
+                style={{
+                    borderRadius: '12px',
+                    transform: 'translateY(100px)',
+                    boxShadow: '0px 60px 30px rgba(32, 30, 30, 0.20)',
+                }}
+            />
+            <ProjectCard
+                variants={projectOtherCardsVariants}
+                initial="from"
+                animate="to"
+                transition={{ type: 'spring', stiffness: 100, delay: 1 }}
+                width="300px"
+                height="300px"
+                backgroundColor="#5DEE9F"
+            />
+        </Wrapper>
+    );
+};
+
+export default Projects;
