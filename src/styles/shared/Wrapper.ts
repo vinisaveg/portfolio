@@ -6,21 +6,22 @@ interface WrapperProps {
     flexDirection: string;
     justifyContent: string;
     alignItems: string;
-    margin?: string;
+    margin?: Array<string>;
     padding?: Array<string>;
 }
 
 export const Wrapper = styled(motion.div)<WrapperProps>`
-    position: relative;
     width: ${(props) => props.width};
     height: ${(props) => props.height};
     background-color: ${(props) => props.theme.colors.background};
     font-family: ${(props) => props.theme.fonts.primary};
     color: ${(props) => props.theme.colors.primary};
     padding: ${(props) => props.padding?.join(' ')};
-    display: flex;
-    flex-wrap: wrap;
+    margin: ${(props) => props.margin?.join(' ')};
     flex-direction: ${(props) => props.flexDirection};
     justify-content: ${(props) => props.justifyContent};
     align-items: ${(props) => props.alignItems};
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 `;

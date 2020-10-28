@@ -6,6 +6,7 @@ import theme from './styles/theme/theme';
 
 import { Wrapper } from './styles/shared/Wrapper';
 import Header from './components/Header/Header.component';
+import Welcome from './components/Welcome/Welcome.component';
 
 const App: FunctionComponent = () => {
     return (
@@ -20,6 +21,7 @@ const App: FunctionComponent = () => {
                     height="auto"
                 >
                     <Header />
+                    <Welcome />
                 </Wrapper>
             </ThemeProvider>
         </>

@@ -4,14 +4,13 @@ import { motion } from 'framer-motion';
 interface ButtonProps {
     padding: Array<string>;
     margin?: Array<string>;
-    primary?: boolean;
+    buttonType: 'primary' | 'secondary';
 }
 
 export const Button = styled(motion.button)<ButtonProps>`
     padding: ${(props) => props.padding?.join(' ')};
     margin: ${(props) => props.margin?.join(' ')};
-    background-color: ${(props) =>
-        props.primary ? props.theme.colors.primary : props.theme.colors.secondary};
+    background-color: ${(props) => props.theme.colors[props.buttonType]};
     color: ${(props) => props.theme.colors.text.white};
     font-family: ${(props) => props.theme.fonts.secondary};
     font-size: ${(props) => props.theme.textSize.small + 'px'};
@@ -21,7 +20,6 @@ export const Button = styled(motion.button)<ButtonProps>`
     transition: opacity 150ms ease;
     opacity: 0.9;
     cursor: pointer;
-
     font-weight: bold;
 
     &&:hover {
