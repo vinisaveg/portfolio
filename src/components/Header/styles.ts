@@ -10,12 +10,16 @@ export const MenuWrapper = styled(motion.nav)<MenuWrapperProps>`
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
 
     @media only screen and (max-width: 540px) {
         display: ${(props) => (props.isOpen ? 'flex' : 'none')};
+        position: fixed;
+        top: 0;
+        bottom: 0;
         background-color: ${(props) => props.theme.colors.secondary};
         width: 100%;
-        height: 100vh;
+        height: 100%;
         overflow: hidden;
         flex-direction: column;
         scroll-behavior: none;
@@ -85,7 +89,7 @@ export const MenuToggleButton = styled(motion.svg)`
     top: 40px;
     right: 40px;
     display: none;
-    z-index: 10;
+    z-index: 101;
     cursor: pointer;
 
     @media only screen and (max-width: 540px) {
