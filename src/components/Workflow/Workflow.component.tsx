@@ -1,10 +1,9 @@
 import React, { FunctionComponent } from 'react';
 
-import { Title } from '../../styles/shared/Title';
 import { Wrapper } from '../../styles/shared/Wrapper';
-
-import { Card, CardIcon, Icon } from './styles';
 import { Text } from '../../styles/shared/Text';
+
+import { Card, CardIcon, Icon, WorkflowTitle, WorkflowWrapper } from './styles';
 
 import prototypeIcon from '../../assets/icons/prototype-icon.svg';
 import codeIcon from '../../assets/icons/code-icon.svg';
@@ -12,7 +11,7 @@ import rocketIcon from '../../assets/icons/rocket-icon.svg';
 
 const Workflow: FunctionComponent = () => {
     return (
-        <Wrapper
+        <WorkflowWrapper
             width="100%"
             height="auto"
             flexDirection="column"
@@ -20,9 +19,9 @@ const Workflow: FunctionComponent = () => {
             justifyContent="flex-start"
             backgroundColor="#F5F5F5"
         >
-            <Title color="black" margin={['160px', '0px', '60px', '0px']}>
+            <WorkflowTitle color="black" margin={['160px', '0px', '60px', '0px']}>
                 My workflow
-            </Title>
+            </WorkflowTitle>
 
             <Wrapper
                 width="100%"
@@ -113,7 +112,7 @@ const Workflow: FunctionComponent = () => {
                     </Text>
                 </Card>
             </Wrapper>
-        </Wrapper>
+        </WorkflowWrapper>
     );
 };
 

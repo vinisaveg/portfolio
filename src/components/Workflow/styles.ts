@@ -1,5 +1,21 @@
 import styled from 'styled-components';
 
+import { Wrapper } from '../../styles/shared/Wrapper';
+import { Title } from '../../styles/shared/Title';
+
+export const WorkflowWrapper = styled(Wrapper)`
+    @media only screen and (max-width: 1280px) {
+        background-color: ${(props) => props.theme.colors.background};
+    }
+`;
+
+export const WorkflowTitle = styled(Title)`
+    @media only screen and (max-width: 1280px) {
+        margin-top: 60px;
+        color: white;
+    }
+`;
+
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
@@ -8,7 +24,15 @@ export const Card = styled.div`
     margin: 0px 60px;
 
     @media only screen and (max-width: 1170px) {
-        margin: 60px;
+        margin: 36px 60px;
+
+        &&:first-child {
+            margin-top: 0px;
+        }
+
+        &&:last-child {
+            margin-bottom: 0px;
+        }
     }
 `;
 
