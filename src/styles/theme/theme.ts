@@ -17,7 +17,7 @@ export default {
     textSize: {
         small: 16,
         medium: 18,
-        title: 28,
+        title: 32,
         big: 36,
     },
 };

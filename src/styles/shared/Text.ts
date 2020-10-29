@@ -8,6 +8,7 @@ interface TextProps {
     margin?: Array<string>;
     padding?: Array<string>;
     textAlign?: 'center' | 'right' | 'justify' | 'left';
+    maxWidth?: number;
 }
 
 export const Text = styled.p<TextProps>`
@@ -18,4 +19,5 @@ export const Text = styled.p<TextProps>`
     padding: ${(props) => props.padding?.join(' ')};
     margin: ${(props) => props.margin?.join(' ')};
     text-align: ${(props) => props.textAlign};
+    max-width: ${(props) => props.maxWidth + 'px'};
 `;

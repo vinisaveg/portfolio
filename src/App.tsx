@@ -8,6 +8,7 @@ import { Wrapper } from './styles/shared/Wrapper';
 import Header from './components/Header/Header.component';
 import Welcome from './components/Welcome/Welcome.component';
 import Projects from './components/Projects/Projects.component';
+import Workflow from './components/Workflow/Workflow.component';
 
 const App: FunctionComponent = () => {
     return (
@@ -22,8 +23,12 @@ const App: FunctionComponent = () => {
                     height="auto"
                 >
                     <Header />
+
                     <Welcome />
+
                     <Projects />
+
+                    <Workflow />
                 </Wrapper>
             </ThemeProvider>
         </>

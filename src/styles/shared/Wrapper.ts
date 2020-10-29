@@ -9,12 +9,14 @@ interface WrapperProps {
     flexWrap?: 'wrap' | 'nowrap';
     margin?: Array<string>;
     padding?: Array<string>;
+    backgroundColor?: string;
 }
 
 export const Wrapper = styled(motion.div)<WrapperProps>`
     width: ${(props) => props.width};
     height: ${(props) => props.height};
-    background-color: ${(props) => props.theme.colors.background};
+    background-color: ${(props) =>
+        props.backgroundColor || props.theme.colors.background};
     font-family: ${(props) => props.theme.fonts.primary};
     color: ${(props) => props.theme.colors.primary};
     padding: ${(props) => props.padding?.join(' ')};
