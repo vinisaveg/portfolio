@@ -24,7 +24,8 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
     flex-direction: ${(props) => props.flexDirection};
     justify-content: ${(props) => props.justifyContent};
     align-items: ${(props) => props.alignItems};
+    flex-wrap: ${(props) => props.flexWrap};
     position: relative;
     display: flex;
-    flex-wrap: ${(props) => props.flexWrap};
+    box-sizing: border-box;
 `;

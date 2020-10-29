@@ -14,7 +14,7 @@ const Workflow: FunctionComponent = () => {
     return (
         <Wrapper
             width="100%"
-            height="60vh"
+            height="auto"
             flexDirection="column"
             alignItems="center"
             justifyContent="flex-start"
