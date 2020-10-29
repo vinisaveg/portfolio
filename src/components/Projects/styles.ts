@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+import { Wrapper } from '../../styles/shared/Wrapper';
+
+export const ProjectsWrapper = styled(Wrapper)`
+    @media only screen and (max-width: 1280px) {
+        padding: 60px 0px;
+    }
+`;
+
 interface ProjectCardProps {
     width: string;
     height: string;

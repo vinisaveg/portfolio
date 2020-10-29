@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { Wrapper } from '../../styles/shared/Wrapper';
-import { ProjectCard } from './styles';
+import { ProjectCard, ProjectsWrapper } from './styles';
 
 const Projects: FunctionComponent = () => {
     const projectMiddleCardVariants = {
@@ -26,7 +25,7 @@ const Projects: FunctionComponent = () => {
     };
 
     return (
-        <Wrapper
+        <ProjectsWrapper
             width="100%"
             height="100%"
             flexDirection="row"
@@ -54,7 +53,8 @@ const Projects: FunctionComponent = () => {
                 style={{
                     borderRadius: '12px',
                     transform: 'translateY(100px)',
-                    boxShadow: '0px 60px 30px rgba(32, 30, 30, 0.20)',
+                    boxShadow: '0px 30px 30px rgba(32, 30, 30, 0.10)',
+                    zIndex: 10,
                 }}
             />
             <ProjectCard
@@ -66,7 +66,7 @@ const Projects: FunctionComponent = () => {
                 height="300px"
                 backgroundColor="#5DEE9F"
             />
-        </Wrapper>
+        </ProjectsWrapper>
     );
 };
 
