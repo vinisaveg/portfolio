@@ -10,6 +10,7 @@ interface WrapperProps {
     margin?: Array<string>;
     padding?: Array<string>;
     backgroundColor?: string;
+    maxWidth?: string;
 }
 
 export const Wrapper = styled(motion.div)<WrapperProps>`
@@ -25,6 +26,7 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
     justify-content: ${(props) => props.justifyContent};
     align-items: ${(props) => props.alignItems};
     flex-wrap: ${(props) => props.flexWrap};
+    max-width: ${(props) => props.maxWidth};
     position: relative;
     display: flex;
     box-sizing: border-box;

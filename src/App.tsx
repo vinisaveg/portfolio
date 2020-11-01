@@ -11,6 +11,7 @@ import Welcome from './components/Welcome/Welcome.component';
 import Projects from './components/Projects/Projects.component';
 import Workflow from './components/Workflow/Workflow.component';
 import MyWork from './components/MyWork/MyWork.component';
+import About from './components/About/About.component';
 
 const App: FunctionComponent = () => {
     return (
@@ -33,6 +34,8 @@ const App: FunctionComponent = () => {
                     <Workflow />
 
                     <MyWork />
+
+                    <About />
                 </Wrapper>
             </ThemeProvider>
         </>
