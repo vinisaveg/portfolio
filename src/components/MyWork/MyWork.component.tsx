@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 
 import { Button } from '../../styles/shared/Button';
 import { Text } from '../../styles/shared/Text';
+import { Wrapper } from '../../styles/shared/Wrapper';
 
 import { MyWorkWrapper } from './styles';
 
@@ -13,24 +14,35 @@ const MyWork: FunctionComponent = () => {
             flexDirection="row"
             flexWrap="wrap"
             alignItems="center"
-            justifyContent="space-around"
+            justifyContent="center"
             backgroundColor="#fafafa"
             padding={['60px', '160px']}
         >
-            <Text
-                color="black"
-                fontFamily="secondary"
-                fontSize="title"
-                fontWeight={600}
-                maxWidth={180}
-                className="checkout-text"
+            <Wrapper
+                width="100%"
+                maxWidth="1200px"
+                height="auto"
+                flexDirection="row"
+                flexWrap="wrap"
+                alignItems="center"
+                justifyContent="space-around"
+                backgroundColor="transparent"
             >
-                Check out my work
-            </Text>
+                <Text
+                    color="black"
+                    fontFamily="secondary"
+                    fontSize="title"
+                    fontWeight={600}
+                    maxWidth={180}
+                    className="checkout-text"
+                >
+                    Check out my work
+                </Text>
 
-            <Button buttonType="primary" padding={['12px', '42px']}>
-                See here
-            </Button>
+                <Button buttonType="primary" padding={['12px', '42px']}>
+                    See here
+                </Button>
+            </Wrapper>
         </MyWorkWrapper>
     );
 };
