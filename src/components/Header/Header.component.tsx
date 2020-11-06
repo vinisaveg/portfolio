@@ -55,13 +55,13 @@ const Header: FunctionComponent<HeaderProps> = () => {
             <MenuWrapper isOpen={isMenuOpen} animate={menuControls}>
                 <MenuOfLinks>
                     <MenuItem>
-                        <MenuItemLink>My work</MenuItemLink>
+                        <MenuItemLink href="#mywork">My work</MenuItemLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink>About me</MenuItemLink>
+                        <MenuItemLink href="#aboutme">About me</MenuItemLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink>Contact</MenuItemLink>
+                        <MenuItemLink href="#contact">Contact</MenuItemLink>
                     </MenuItem>
                 </MenuOfLinks>
 
