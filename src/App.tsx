@@ -13,6 +13,7 @@ import Workflow from './components/Workflow/Workflow.component';
 import MyWork from './components/MyWork/MyWork.component';
 import About from './components/About/About.component';
 import Contact from './components/Contact/Contact.component';
+import Footer from './components/Footer/Footer.component';
 
 const App: FunctionComponent = () => {
     return (
@@ -39,6 +40,8 @@ const App: FunctionComponent = () => {
                     <About />
 
                     <Contact />
+
+                    <Footer />
                 </Wrapper>
             </ThemeProvider>
         </>
