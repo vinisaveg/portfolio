@@ -12,6 +12,7 @@ import rocketIcon from '../../assets/icons/rocket-icon.svg';
 const Workflow: FunctionComponent = () => {
     return (
         <WorkflowWrapper
+            id="mywork"
             width="100%"
             height="auto"
             flexDirection="column"
@@ -52,10 +53,10 @@ const Workflow: FunctionComponent = () => {
                         color="white"
                         fontWeight={500}
                         fontFamily="primary"
-                        maxWidth={180}
+                        maxWidth={190}
                         textAlign="center"
                     >
-                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Designing and adjusting the project final look
                     </Text>
                 </Card>
 
@@ -78,10 +79,10 @@ const Workflow: FunctionComponent = () => {
                         color="white"
                         fontWeight={500}
                         fontFamily="primary"
-                        maxWidth={180}
+                        maxWidth={190}
                         textAlign="center"
                     >
-                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        With a nice cup of coffee, the code is written
                     </Text>
                 </Card>
 
@@ -105,10 +106,10 @@ const Workflow: FunctionComponent = () => {
                         color="white"
                         fontWeight={500}
                         fontFamily="primary"
-                        maxWidth={180}
+                        maxWidth={190}
                         textAlign="center"
                     >
-                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Everything is working properly? let's launch it!
                     </Text>
                 </Card>
             </Wrapper>

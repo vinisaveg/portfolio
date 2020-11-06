@@ -42,7 +42,7 @@ export const MessageInput = styled.textarea`
     margin: 0px;
     padding: 15px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     color: white;
     outline: none;
 

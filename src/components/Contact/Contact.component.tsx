@@ -21,6 +21,7 @@ const Contact: FunctionComponent = () => {
 
     return (
         <Wrapper
+            id="contact"
             width="100%"
             height="100%"
             alignItems="center"
@@ -56,7 +57,7 @@ const Contact: FunctionComponent = () => {
                         fontWeight={500}
                         maxWidth={350}
                     >
-                        If a project is in your mind, let’s build it together.
+                        If there is a project in your mind, let’s build it together.
                         Contact me in any social media or send me a direct message.
                     </Text>
                 </ContactText>

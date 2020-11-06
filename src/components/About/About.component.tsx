@@ -21,6 +21,7 @@ import { Wrapper } from '../../styles/shared/Wrapper';
 const About: FunctionComponent = () => {
     return (
         <Wrapper
+            id="aboutme"
             width="100%"
             height="100%"
             alignItems="center"

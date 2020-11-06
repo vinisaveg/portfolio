@@ -39,7 +39,12 @@ const MyWork: FunctionComponent = () => {
                     Check out my work
                 </Text>
 
-                <Button buttonType="primary" padding={['12px', '42px']}>
+                <Button
+                    target="_blank"
+                    href="https://www.instagram.com/vsgdesigner/"
+                    buttonType="primary"
+                    padding={['12px', '42px']}
+                >
                     See here
                 </Button>
             </Wrapper>

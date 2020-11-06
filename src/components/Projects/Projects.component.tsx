@@ -1,6 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import { ProjectCard, ProjectsWrapper } from './styles';
 
+import goventuresProject from '../../assets/images/goventures-project.png';
+
 const Projects: FunctionComponent = () => {
     const projectMiddleCardVariants = {
         from: {
@@ -40,9 +42,9 @@ const Projects: FunctionComponent = () => {
                 transition={{ type: 'spring', stiffness: 100, delay: 1 }}
                 width="300px"
                 height="300px"
-                backgroundColor="#5DEE9F"
             />
             <ProjectCard
+                id="project"
                 variants={projectMiddleCardVariants}
                 initial="from"
                 animate="to"
@@ -55,6 +57,7 @@ const Projects: FunctionComponent = () => {
                     transform: 'translateY(100px)',
                     boxShadow: '0px 30px 30px rgba(32, 30, 30, 0.10)',
                     zIndex: 10,
+                    backgroundImage: `url(${goventuresProject})`,
                 }}
             />
             <ProjectCard
@@ -64,7 +67,6 @@ const Projects: FunctionComponent = () => {
                 transition={{ type: 'spring', stiffness: 100, delay: 1 }}
                 width="300px"
                 height="300px"
-                backgroundColor="#5DEE9F"
             />
         </ProjectsWrapper>
     );

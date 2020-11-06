@@ -80,7 +80,7 @@ export const MenuItemLink = styled.a<MenuItemLinkProps>`
     }
 `;
 
-export const MenuItemIcon = styled.img`
+export const MenuItemIcon = styled(motion.svg)`
     width: 21px;
 `;
 
