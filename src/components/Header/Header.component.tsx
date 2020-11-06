@@ -21,6 +21,8 @@ interface HeaderProps {}
 const Header: FunctionComponent<HeaderProps> = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const { innerWidth: width } = window;
+
     const menuControls = useAnimation();
 
     const toggleMenu = async () => {
@@ -44,6 +46,14 @@ const Header: FunctionComponent<HeaderProps> = () => {
         closed: { fill: '#ffffff' },
     };
 
+    const closeMenuWhenNavigateOnMobile = () => {
+        if (width > 540) {
+            return;
+        }
+
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <Wrapper
             width="100%"
@@ -52,16 +62,35 @@ const Header: FunctionComponent<HeaderProps> = () => {
             alignItems="center"
             justifyContent="center"
         >
-            <MenuWrapper isOpen={isMenuOpen} animate={menuControls}>
+            <MenuWrapper
+                initial={width > 540 ? { y: 0 } : { y: -900 }}
+                isOpen={isMenuOpen}
+                animate={menuControls}
+            >
                 <MenuOfLinks>
                     <MenuItem>
-                        <MenuItemLink href="#mywork">My work</MenuItemLink>
+                        <MenuItemLink
+                            onClick={closeMenuWhenNavigateOnMobile}
+                            href="#mywork"
+                        >
+                            My work
+                        </MenuItemLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink href="#aboutme">About me</MenuItemLink>
+                        <MenuItemLink
+                            onClick={closeMenuWhenNavigateOnMobile}
+                            href="#aboutme"
+                        >
+                            About me
+                        </MenuItemLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink href="#contact">Contact</MenuItemLink>
+                        <MenuItemLink
+                            onClick={closeMenuWhenNavigateOnMobile}
+                            href="#contact"
+                        >
+                            Contact
+                        </MenuItemLink>
                     </MenuItem>
                 </MenuOfLinks>
 
