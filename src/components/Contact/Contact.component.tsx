@@ -16,7 +16,7 @@ const Contact: FunctionComponent = () => {
         }
 
         const whatsappURL: string = `https://wa.me/${process.env.REACT_APP_PHONE_NUMBER}/?text=${message}`;
-        window.location.href = whatsappURL;
+        window.open(whatsappURL, '_blank');
     };
 
     return (

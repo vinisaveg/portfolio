@@ -78,6 +78,10 @@ export const MenuItemLink = styled.a<MenuItemLinkProps>`
     &&:hover {
         opacity: 1;
     }
+
+    @media only screen and (max-width: 540px) {
+        margin: 15px;
+    }
 `;
 
 export const MenuItemIcon = styled(motion.svg)`
