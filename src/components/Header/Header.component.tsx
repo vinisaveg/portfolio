@@ -99,7 +99,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                     <MenuItem>
                         <MenuItemLink
                             target="_blank"
-                            href="https://www.behance.net/viniciussilva3"
+                            href="https://www.behance.net/vinisaveg"
                             margin={['0px', '8px']}
                         >
                             <MenuItemIcon
@@ -122,7 +122,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                         </MenuItemLink>
                         <MenuItemLink
                             target="_blank"
-                            href="https://www.instagram.com/vsgdesigner/"
+                            href="https://www.instagram.com/vinisavegdev/"
                             margin={['0px', '8px']}
                         >
                             <MenuItemIcon
