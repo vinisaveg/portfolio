@@ -56,9 +56,9 @@ const About: FunctionComponent = () => {
                         maxWidth={350}
                         margin={['0px', '0px', '15px', '0px']}
                     >
-                        I’m 26 years old and I’ve been programming since 2019,
-                        mainly in Javascript. Designing and coding Landing Pages,
-                        Websites, APIs and others web applications.
+                        I’m 26 years old and I’ve worked on software development
+                        since 2019. Designing and coding Landing Pages, Websites,
+                        E-commerce, APIs and other web applications.
                     </Text>
 
                     <Text
