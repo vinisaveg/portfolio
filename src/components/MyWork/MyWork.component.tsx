@@ -41,7 +41,7 @@ const MyWork: FunctionComponent = () => {
 
                 <Button
                     target="_blank"
-                    href="https://www.instagram.com/vsgdesigner/"
+                    href="https://www.instagram.com/vinisavegdev/"
                     buttonType="primary"
                     padding={['12px', '42px']}
                 >
