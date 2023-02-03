@@ -4,6 +4,7 @@ import { Wrapper } from '../../styles/shared/Wrapper';
 export const AboutWrapper = styled(Wrapper)`
     @media screen and (max-width: 1105px) {
         flex-direction: column;
+        height: 100%;
     }
 `;
 
@@ -33,6 +34,7 @@ export const AboutSkills = styled(Wrapper)`
 export const MeImageWrapper = styled.img`
     width: 100%;
     height: 100%;
+    object-fit: cover;
 `;
 
 export const SkillIcon = styled.img`

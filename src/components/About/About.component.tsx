@@ -19,6 +19,10 @@ import nodeIcon from '../../assets/icons/node-icon.svg';
 import { Wrapper } from '../../styles/shared/Wrapper';
 
 const About: FunctionComponent = () => {
+    const birthdate = new Date(1995, 11, 28);
+    const ageDate = Date.now() - Number(birthdate);
+    const age = new Date(ageDate).getUTCFullYear() - 1970;
+
     return (
         <Wrapper
             id="aboutme"
@@ -31,7 +35,7 @@ const About: FunctionComponent = () => {
             <AboutWrapper
                 width="100%"
                 maxWidth="1600px"
-                height="100%"
+                height="650px"
                 alignItems="center"
                 justifyContent="center"
                 flexDirection="row"
@@ -56,9 +60,10 @@ const About: FunctionComponent = () => {
                         maxWidth={350}
                         margin={['0px', '0px', '15px', '0px']}
                     >
-                        I’m 26 years old and I’ve worked on software development
-                        since 2019. Designing and coding Landing Pages, Websites,
-                        E-commerce, APIs and other web applications.
+                        I’m {age} years old and I’ve been working on software
+                        development since 2019. I have experience working with Web
+                        Apps, E-commerce, REST and GraphQL APIs, Micro-services,
+                        Automation, Serverless, Cloud Services and more.
                     </Text>
 
                     <Text
