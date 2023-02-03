@@ -4,8 +4,6 @@
 
 # My portfolio
 
-> 2021 version of my portfolio.
-
 ![Version](https://img.shields.io/github/package-json/v/vinisaveg/portfolio?color=%236875E5)
 ![Website](https://img.shields.io/website?color=%236875E5&url=https%3A%2F%2Fvsgdesign.me)
 
