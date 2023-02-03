@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.js": "/static/js/main.e178723a.chunk.js",
-    "main.js.map": "/static/js/main.e178723a.chunk.js.map",
+    "main.js": "/static/js/main.23a031a2.chunk.js",
+    "main.js.map": "/static/js/main.23a031a2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
     "static/js/2.064affd0.chunk.js": "/static/js/2.064affd0.chunk.js",
     "static/js/2.064affd0.chunk.js.map": "/static/js/2.064affd0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.03a004d6cd2cdb45106225b7f58ea028.js": "/precache-manifest.03a004d6cd2cdb45106225b7f58ea028.js",
+    "precache-manifest.cb2f44a39e035533c7908c0dc253b554.js": "/precache-manifest.cb2f44a39e035533c7908c0dc253b554.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.064affd0.chunk.js.LICENSE.txt": "/static/js/2.064affd0.chunk.js.LICENSE.txt",
     "static/media/code-icon.svg": "/static/media/code-icon.8215747e.svg",
-    "static/media/farfetch-project.png": "/static/media/farfetch-project.e612fa4e.png",
-    "static/media/goventures-project.png": "/static/media/goventures-project.258fab4d.png",
-    "static/media/happy-project.png": "/static/media/happy-project.38b78a95.png",
+    "static/media/farfetch-project.png": "/static/media/farfetch-project.23d3c254.png",
+    "static/media/goventures-project.png": "/static/media/goventures-project.b1731fc1.png",
     "static/media/logo.svg": "/static/media/logo.2bacc51b.svg",
-    "static/media/me.png": "/static/media/me.7a8f2de9.png",
+    "static/media/me.png": "/static/media/me.4325befb.png",
     "static/media/node-icon.svg": "/static/media/node-icon.6ee71b5b.svg",
     "static/media/prototype-icon.svg": "/static/media/prototype-icon.67ddc0e3.svg",
     "static/media/react-icon.svg": "/static/media/react-icon.51d270a6.svg",
     "static/media/rocket-icon.svg": "/static/media/rocket-icon.1a059d66.svg",
-    "static/media/ts-icon.svg": "/static/media/ts-icon.4ce92645.svg"
+    "static/media/ts-icon.svg": "/static/media/ts-icon.4ce92645.svg",
+    "static/media/vela-project.png": "/static/media/vela-project.3a378218.png"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
     "static/js/2.064affd0.chunk.js",
-    "static/js/main.e178723a.chunk.js"
+    "static/js/main.23a031a2.chunk.js"
   ]
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae98a5a96ff7874b14a896c4cd31c574",
+    "revision": "03057a131d4067573e304f2fce5a8069",
     "url": "/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.064affd0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "51da008e75d12c8a48ac",
-    "url": "/static/js/main.e178723a.chunk.js"
+    "revision": "16631c838179b8acb15b",
+    "url": "/static/js/main.23a031a2.chunk.js"
   },
   {
     "revision": "4f2b1704eab49d50853b",
@@ -24,24 +24,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/code-icon.8215747e.svg"
   },
   {
-    "revision": "e612fa4e02101d2b961b0acb5c7ec4da",
-    "url": "/static/media/farfetch-project.e612fa4e.png"
+    "revision": "23d3c254a82fe8b96a455bfae1dd61ea",
+    "url": "/static/media/farfetch-project.23d3c254.png"
   },
   {
-    "revision": "258fab4d737070bc9cdf9d0b7a15e3ac",
-    "url": "/static/media/goventures-project.258fab4d.png"
-  },
-  {
-    "revision": "38b78a953345eb9731dae6e669fafe2a",
-    "url": "/static/media/happy-project.38b78a95.png"
+    "revision": "b1731fc1f930fe58a186ae4ce597847d",
+    "url": "/static/media/goventures-project.b1731fc1.png"
   },
   {
     "revision": "2bacc51bb66e4d6e2ebcbbeedbe87427",
     "url": "/static/media/logo.2bacc51b.svg"
   },
   {
-    "revision": "7a8f2de91c398df8b64f019fceb87ca3",
-    "url": "/static/media/me.7a8f2de9.png"
+    "revision": "4325befb3aaad5bcf6266f9511492949",
+    "url": "/static/media/me.4325befb.png"
   },
   {
     "revision": "6ee71b5ba92e041bc1d377f2b433f571",
@@ -62,5 +58,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4ce92645c2b655f77d96a00970fe58f2",
     "url": "/static/media/ts-icon.4ce92645.svg"
+  },
+  {
+    "revision": "3a378218ca5859faba422bba7dea8686",
+    "url": "/static/media/vela-project.3a378218.png"
   }
 ]);
