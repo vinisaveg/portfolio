@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { ProjectCard, ProjectsWrapper } from './styles';
 
-import goventuresProject from '../../assets/images/goventures-project.png';
+import velaProject from '../../assets/images/vela-project.png';
 
 const Projects: FunctionComponent = () => {
     const projectMiddleCardVariants = {
@@ -42,6 +42,9 @@ const Projects: FunctionComponent = () => {
                 transition={{ type: 'spring', stiffness: 100, delay: 1 }}
                 width="300px"
                 height="300px"
+                style={{
+                    backgroundPosition: 'left',
+                }}
             />
             <ProjectCard
                 id="project"
@@ -57,7 +60,7 @@ const Projects: FunctionComponent = () => {
                     transform: 'translateY(100px)',
                     boxShadow: '0px 30px 30px rgba(32, 30, 30, 0.10)',
                     zIndex: 10,
-                    backgroundImage: `url(${goventuresProject})`,
+                    backgroundImage: `url(${velaProject})`,
                 }}
             />
             <ProjectCard

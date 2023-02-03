@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Wrapper } from '../../styles/shared/Wrapper';
 
 import farfetchProject from '../../assets/images/farfetch-project.png';
-import happyProject from '../../assets/images/happy-project.png';
+import goventuresProject from '../../assets/images/goventures-project.png';
 
 export const ProjectsWrapper = styled(Wrapper)`
     @media only screen and (max-width: 1280px) {
@@ -28,11 +28,11 @@ export const ProjectCard = styled(motion.div)<ProjectCardProps>`
     background-repeat: no-repeat;
 
     &&:first-child {
-        background-image: url('${farfetchProject}');
+        background-image: url('${goventuresProject}');
     }
 
     &&:last-child {
-        background-image: url('${happyProject}');
+        background-image: url('${farfetchProject}');
         background-size: cover;
     }
 
@@ -43,6 +43,7 @@ export const ProjectCard = styled(motion.div)<ProjectCardProps>`
         margin: 15px 0px;
         border-radius: 8px;
         box-shadow: none;
+        background-position: top center !important;
 
         && {
             background-size: 100%;
