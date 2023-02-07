@@ -38,6 +38,10 @@ jobs:
                   folder: build
                   token: ${{secrets.gh_token}}
 
+            - name: Sleep for 60 seconds
+              run: sleep 60s
+              shell: bash
+
             - name: Lighthouse Check
               uses: foo-software/lighthouse-check-action@master
               id: lighthouseCheck
