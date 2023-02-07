@@ -101,6 +101,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                             target="_blank"
                             href="https://www.behance.net/vinisaveg"
                             margin={['0px', '8px']}
+                            aria-label="Go to my behance profile"
                         >
                             <MenuItemIcon
                                 width="40"
@@ -124,6 +125,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                             target="_blank"
                             href="https://www.instagram.com/vinisavegdev/"
                             margin={['0px', '8px']}
+                            aria-label="Go to my instagram profile"
                         >
                             <MenuItemIcon
                                 width="40"
@@ -145,6 +147,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                             target="_blank"
                             href="https://github.com/vinisaveg"
                             margin={['0px', '8px']}
+                            aria-label="Go to my github profile"
                         >
                             <MenuItemIcon
                                 width="40"

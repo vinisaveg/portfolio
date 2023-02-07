@@ -103,9 +103,9 @@ const About: FunctionComponent = () => {
                         alignItems="center"
                         justifyContent="flex-start"
                     >
-                        <SkillIcon src={reactIcon} />
-                        <SkillIcon src={nodeIcon} />
-                        <SkillIcon src={tsIcon} />
+                        <SkillIcon src={reactIcon} alt="React logo icon" />
+                        <SkillIcon src={nodeIcon} alt="Node logo icon" />
+                        <SkillIcon src={tsIcon} alt="Typescript logo icon" />
                     </AboutSkills>
                 </AboutText>
 
@@ -116,7 +116,10 @@ const About: FunctionComponent = () => {
                     alignItems="center"
                     justifyContent="center"
                 >
-                    <MeImageWrapper src={meImage} />
+                    <MeImageWrapper
+                        src={meImage}
+                        alt="Me in a hoddie, wearing glasses. The background is a coffee shop."
+                    />
                 </AboutImage>
             </AboutWrapper>
         </Wrapper>
