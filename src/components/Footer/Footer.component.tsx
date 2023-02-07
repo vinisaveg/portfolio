@@ -13,7 +13,7 @@ const Footer: FunctionComponent = () => {
             alignItems="center"
             justifyContent="center"
         >
-            <LogoIcon src={Logo} />
+            <LogoIcon src={Logo} alt="My personal logo" />
         </Wrapper>
     );
 };
