@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.0af5b967.js",
+    "main.js": "/static/js/main.47384768.js",
     "static/media/me.png": "/static/media/me.7546c112d66db21071b7.png",
     "static/media/vela-project.png": "/static/media/vela-project.16d59fd224bda6978815.png",
     "static/media/goventures-project.png": "/static/media/goventures-project.9b478cb244bbec3e35fe.png",
@@ -13,9 +13,9 @@
     "static/media/react-icon.svg": "/static/media/react-icon.5c518909bf9efe19fd7d65ddabbfae7b.svg",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.b8fe733482daeffe8722f90e3b82378f.svg",
-    "main.0af5b967.js.map": "/static/js/main.0af5b967.js.map"
+    "main.47384768.js.map": "/static/js/main.47384768.js.map"
   },
   "entrypoints": [
-    "static/js/main.0af5b967.js"
+    "static/js/main.47384768.js"
   ]
 }
